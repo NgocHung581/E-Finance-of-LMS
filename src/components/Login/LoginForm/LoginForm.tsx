@@ -54,7 +54,10 @@ function LoginForm() {
           <span>Quên mật khẩu?</span>
         </Link>
 
-        <Link to="/list-courses" className="form-submit btn-login">
+        <Link
+          to="/tuition-management/list-courses"
+          className="form-submit btn-login"
+        >
           Đăng nhập
         </Link>
       </form>
