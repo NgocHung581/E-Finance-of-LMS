@@ -187,9 +187,9 @@ function ListCourses() {
           </div>
         </div>
         <ul className="board-listCourses-body-list">
-          {listCourses.map((course) => {
+          {listCourses.map((course, index) => {
             return (
-              <li className="board-listCourses-body-item">
+              <li key={index} className="board-listCourses-body-item">
                 <span className="board-listCourses-body-item-information board-listCourses-body-item-id">
                   {course.id}
                 </span>

@@ -1,4 +1,5 @@
 import { FaPlus } from "react-icons/fa";
+import { Link, Outlet } from "react-router-dom";
 import "../TuitionManagement.css";
 import "./CourseDetail.css";
 import iconInfo from "./image/IconInfo.png";
@@ -56,7 +57,9 @@ function CourseDetail() {
           </div>
         </div>
       </div>
-      <a className="board-detailCourse-listStudents-btn">Danh sách học viên</a>
+      <Link to="list-students" className="board-detailCourse-listStudents-btn">
+        Danh sách học viên
+      </Link>
       <p className="board-detailCourse-quantity">
         Số lượng biểu phí:
         <span>02</span>

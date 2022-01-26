@@ -80,6 +80,7 @@
 .menu-title-content {
   opacity: 0.8;
   display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -147,4 +148,8 @@
   letter-spacing: 0.015em;
   opacity: 1;
   transition: all linear 0.3s;
+}
+
+.menu-title-list-disabled {
+  display: none;
 }

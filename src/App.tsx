@@ -5,6 +5,7 @@ import LoginForgetForm from "./components/Login/LoginForgetForm/LoginForgetForm"
 import TuitionManagement from "./components/TuitionManagement/TuitionManagement";
 import ListCourses from "./components/TuitionManagement/ListCourses/ListCourses";
 import CourseDetail from "./components/TuitionManagement/CourseDetail/CourseDetail";
+import ListStudent from "./components/TuitionManagement/ListStudent/ListStudent";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Route path="tuition-management" element={<TuitionManagement />}>
           <Route path="list-courses" element={<ListCourses />} />
           <Route path="list-courses/detail-course" element={<CourseDetail />} />
+          <Route
+            path="list-courses/detail-course/list-students"
+            element={<ListStudent />}
+          />
         </Route>
       </Routes>
     </div>
