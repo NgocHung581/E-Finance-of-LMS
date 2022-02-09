@@ -71,7 +71,7 @@ function LoginForgetForm() {
           />
         </div>
 
-        <Link className="form-option" to="/login">
+        <Link className="form-option" to="/">
           <FaChevronLeft />
           <span>Quay lại trang chủ</span>
         </Link>

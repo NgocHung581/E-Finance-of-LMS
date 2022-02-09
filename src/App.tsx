@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="login" element={<LoginForm />} />
+        <Route path="/" element={<LoginForm />} />
         <Route path="password-reset" element={<LoginForgetForm />} />
         <Route path="tuition-management" element={<TuitionManagement />}>
           <Route path="list-courses" element={<ListCourses />} />

@@ -7,7 +7,7 @@ function Account() {
     <div className="container-account">
       <img src={avaUser} className="account-avatar" />
       <p className="account-name">User Name</p>
-      <Link to="/login" className="account-logout">
+      <Link to="/" className="account-logout">
         Đăng xuất
       </Link>
     </div>

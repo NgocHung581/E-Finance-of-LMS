@@ -4,6 +4,7 @@ import BoardSearch from "../../BoardSearch/BoardSearch";
 import "./ListStudent.css";
 import iconInfo from "./image/IconInfo.png";
 import BoardFooter from "../../BoardFooter/BoardFooter";
+import { listStudents } from "../../data/listStudents";
 
 const ListStudent = () => {
   return (
@@ -52,329 +53,52 @@ const ListStudent = () => {
             </div>
           </div>
           <ul className="board-listStudent-body-list">
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--notdone">
-                Chưa thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
-            <li className="board-listStudent-body-item">
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
-                1
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
-                Bùi Thế Anh
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
-                001
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
-                Nam
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
-                01/07/2021
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
-                2
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
-                Không
-              </span>
-              <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
-                Đã thanh toán
-              </span>
-              <a className="board-listStudent-body-item-information">
-                <img
-                  className="board-listStudent-body-item-icon"
-                  src={iconInfo}
-                />
-              </a>
-            </li>
+            {listStudents.map((student, index) => {
+              return (
+                <li className="board-listStudent-body-item">
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
+                    {index + 1}
+                  </span>
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-name">
+                    {student.name}
+                  </span>
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-studentID">
+                    {student.studentID}
+                  </span>
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-gender">
+                    {student.gender ? "Nam" : "Nữ"}
+                  </span>
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-DOB">
+                    {student.birthday}
+                  </span>
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-quantity">
+                    {student.quantity}
+                  </span>
+                  <span className="board-listStudent-body-item-information board-listStudent-body-item-discount">
+                    {student.discount ? "Có" : "Không"}
+                  </span>
+                  {student.status ? (
+                    <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--done">
+                      Đã thanh toán
+                    </span>
+                  ) : (
+                    <span className="board-listStudent-body-item-information board-listStudent-body-item-status board-listStudent-body-item-status--notdone">
+                      Chưa thanh toán
+                    </span>
+                  )}
+
+                  <a className="board-listStudent-body-item-information">
+                    <img
+                      className="board-listStudent-body-item-icon"
+                      src={iconInfo}
+                    />
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <span className="board-listStudent-body-total">
-            Tổng số sinh viên: 40
+            Tổng số sinh viên: {listStudents.length}
           </span>
         </div>
         <BoardFooter />
