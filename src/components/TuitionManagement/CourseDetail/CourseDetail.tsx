@@ -1,6 +1,8 @@
 import { Fragment, useState } from "react";
 import { FaPlus, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import Modal, { ModalBody, ModalHeader } from "../../Modal/Modal";
 import "../TuitionManagement.css";
 import "./CourseDetail.css";
@@ -9,6 +11,7 @@ import { listTuition } from "../../data/listTuition";
 
 function CourseDetail() {
   const [showModal, setShowModal] = useState(false);
+  const [selectDate, setSelectDate] = useState(new Date());
 
   return (
     <Fragment>
@@ -187,6 +190,15 @@ function CourseDetail() {
                 );
               })}
             </ul>
+          </div>
+          <div className="modal__body-addTuition-calendar">
+            <DatePicker
+              placeholderText="Ngày bắt đầu"
+              selected={selectDate}
+              onChange={(date) => {
+                if (date != null) setSelectDate(date);
+              }}
+            />
           </div>
         </ModalBody>
       </Modal>
