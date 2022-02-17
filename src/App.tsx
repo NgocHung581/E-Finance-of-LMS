@@ -6,6 +6,7 @@ import TuitionManagement from "./components/TuitionManagement/TuitionManagement"
 import ListCourses from "./components/TuitionManagement/ListCourses/ListCourses";
 import CourseDetail from "./components/TuitionManagement/CourseDetail/CourseDetail";
 import ListStudent from "./components/TuitionManagement/ListStudent/ListStudent";
+import StudentDetail from "./components/StudentDetail/StudentDetail";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route
             path="list-courses/detail-course/list-students"
             element={<ListStudent />}
+          />
+          <Route
+            path="list-courses/detail-course/list-students/detail-student"
+            element={<StudentDetail />}
           />
         </Route>
       </Routes>

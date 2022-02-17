@@ -4,7 +4,7 @@
   top: 204px;
 }
 
-.list-student-title {
+.container-board-title {
   position: absolute;
   top: 148px;
   left: 215px;
@@ -103,7 +103,7 @@
   margin: 0;
   list-style: none;
   position: relative;
-  max-height: 92.63%;
+  max-height: 95.83%;
   overflow-y: scroll;
 }
 
@@ -213,6 +213,6 @@
   letter-spacing: 0.015em;
   color: #373839;
   position: absolute;
-  top: calc(100% + 24px);
   right: 0;
+  margin-top: 24px;
 }

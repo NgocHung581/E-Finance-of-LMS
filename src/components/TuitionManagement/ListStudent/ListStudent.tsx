@@ -5,11 +5,12 @@ import "./ListStudent.css";
 import iconInfo from "./image/IconInfo.png";
 import BoardFooter from "../../BoardFooter/BoardFooter";
 import { listStudents } from "../../data/listStudents";
+import { Link } from "react-router-dom";
 
 const ListStudent = () => {
   return (
     <Fragment>
-      <h2 className="list-student-title">Danh sách học viên</h2>
+      <h2 className="container-board-title">Danh sách học viên</h2>
       <div className="container-board container-board-listStudent">
         <div className="board-listStudent-header">
           <span className="board-listStudent-header-className">
@@ -55,7 +56,7 @@ const ListStudent = () => {
           <ul className="board-listStudent-body-list">
             {listStudents.map((student, index) => {
               return (
-                <li className="board-listStudent-body-item">
+                <li key={index} className="board-listStudent-body-item">
                   <span className="board-listStudent-body-item-information board-listStudent-body-item-order">
                     {index + 1}
                   </span>
@@ -87,12 +88,15 @@ const ListStudent = () => {
                     </span>
                   )}
 
-                  <a className="board-listStudent-body-item-information">
+                  <Link
+                    className="board-listStudent-body-item-information"
+                    to="detail-student"
+                  >
                     <img
                       className="board-listStudent-body-item-icon"
                       src={iconInfo}
                     />
-                  </a>
+                  </Link>
                 </li>
               );
             })}

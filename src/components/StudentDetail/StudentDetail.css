@@ -1,0 +1,55 @@
+.container-board.container-board-detailStudent {
+  height: 75.27777778%;
+  width: 85.41666667%;
+  top: 204px;
+}
+
+.board-detailStudent-header {
+  width: 92.1341463%;
+  height: 205px;
+  border: 1px solid #ff7506;
+  border-radius: 16px;
+  margin-left: 64px;
+  margin-top: 32px;
+  background: #fff9f4;
+  padding-left: 64px;
+}
+
+.board-detailStudent-header-title {
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #cc5c00;
+  margin-top: 16px;
+}
+
+.board-detailStudent-header-listInfo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board-detailStudent-header-item {
+  display: flex;
+  width: 25%;
+  margin-top: 16px;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
+  color: #373839;
+}
+
+.board-detailStudent-header-item span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.board-detailStudent-header-item p {
+  margin-right: 150px;
+  opacity: 0.8;
+}

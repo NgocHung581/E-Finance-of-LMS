@@ -149,7 +149,7 @@ function CourseDetail() {
           </div>
         </div>
       </div>
-      <Modal show={showModal}>
+      {/* <Modal show={showModal}>
         <ModalHeader>
           <h2 className="modal__header-title">Thêm biểu phí</h2>
         </ModalHeader>
@@ -201,7 +201,7 @@ function CourseDetail() {
             />
           </div>
         </ModalBody>
-      </Modal>
+      </Modal> */}
     </Fragment>
   );
 }
