@@ -107,6 +107,17 @@
   overflow-y: scroll;
 }
 
+.board-listStudent-body-list::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+}
+
+.board-listStudent-body-list::-webkit-scrollbar-thumb {
+  background-color: #999796;
+  border-radius: 15px;
+}
+
 .board-listStudent-body-item {
   display: flex;
   align-items: center;

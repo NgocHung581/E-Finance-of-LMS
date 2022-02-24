@@ -81,7 +81,7 @@ const StudentDetail = () => {
             </li>
             <li className="board-detailStudent-header-item">
               <span className="detailStudent-header-item-col3">
-                Hệ đào tạo:{" "}
+                Hệ đào tạo:
               </span>
               <p>Tín chỉ</p>
             </li>

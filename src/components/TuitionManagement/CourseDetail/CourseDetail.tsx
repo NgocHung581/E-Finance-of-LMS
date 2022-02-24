@@ -149,7 +149,7 @@ function CourseDetail() {
           </div>
         </div>
       </div>
-      {/* <Modal show={showModal}>
+      <Modal show={showModal}>
         <ModalHeader>
           <h2 className="modal__header-title">Thêm biểu phí</h2>
         </ModalHeader>
@@ -192,16 +192,33 @@ function CourseDetail() {
             </ul>
           </div>
           <div className="modal__body-addTuition-calendar">
-            <DatePicker
-              placeholderText="Ngày bắt đầu"
-              selected={selectDate}
-              onChange={(date) => {
-                if (date != null) setSelectDate(date);
-              }}
-            />
+            <div className="modal__body-addTuition-calendar-group">
+              <span className="modal__body-addTuition-calendar-title">
+                Ngày bắt đầu:
+              </span>
+              <DatePicker
+                placeholderText="Ngày bắt đầu"
+                selected={selectDate}
+                onChange={(date) => {
+                  if (date != null) setSelectDate(date);
+                }}
+              />
+            </div>
+            <div className="modal__body-addTuition-calendar-group">
+              <span className="modal__body-addTuition-calendar-title">
+                Ngày kết thúc:
+              </span>
+              <DatePicker
+                placeholderText="Ngày kết thúc"
+                selected={selectDate}
+                onChange={(date) => {
+                  if (date != null) setSelectDate(date);
+                }}
+              />
+            </div>
           </div>
         </ModalBody>
-      </Modal> */}
+      </Modal>
     </Fragment>
   );
 }
