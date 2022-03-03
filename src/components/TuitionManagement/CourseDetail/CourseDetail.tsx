@@ -7,10 +7,12 @@ import Modal, { ModalBody, ModalHeader } from "../../Modal/Modal";
 import "../TuitionManagement.css";
 import "./CourseDetail.css";
 import iconInfo from "./image/IconInfo.png";
+import iconClose from "./image/iconClose.png";
 import { listTuition } from "../../data/listTuition";
 
 function CourseDetail() {
   const [showModal, setShowModal] = useState(false);
+  const [showModalDetailTuition, setShowModalDetailTuition] = useState(false);
   const [selectDate, setSelectDate] = useState(new Date());
 
   return (
@@ -118,7 +120,10 @@ function CourseDetail() {
                     Ngừng áp dụng
                   </span>
                 </span>
-                <span className="tuition-table-item tuition-table-item-detail">
+                <span
+                  onClick={() => setShowModalDetailTuition(true)}
+                  className="tuition-table-item tuition-table-item-detail"
+                >
                   <img
                     src={iconInfo}
                     className="tuition-table-item-detail-icon"
@@ -138,7 +143,10 @@ function CourseDetail() {
                     Ngừng áp dụng
                   </span>
                 </span>
-                <span className="tuition-table-item tuition-table-item-detail">
+                <span
+                  onClick={() => setShowModalDetailTuition(true)}
+                  className="tuition-table-item tuition-table-item-detail"
+                >
                   <img
                     src={iconInfo}
                     className="tuition-table-item-detail-icon"
@@ -149,7 +157,9 @@ function CourseDetail() {
           </div>
         </div>
       </div>
-      <Modal show={showModal}>
+
+      {/* Modal add tuition */}
+      <Modal className="modal__addTuition" show={showModal}>
         <ModalHeader>
           <h2 className="modal__header-title">Thêm biểu phí</h2>
         </ModalHeader>
@@ -216,6 +226,88 @@ function CourseDetail() {
                 }}
               />
             </div>
+          </div>
+        </ModalBody>
+      </Modal>
+
+      {/* Modal detail tuition */}
+      <Modal className="modal__detailTuition" show={showModalDetailTuition}>
+        <ModalHeader>
+          <h2 className="modal__header-title">Chi tiết biểu phí</h2>
+          <img
+            src={iconClose}
+            className="modal__header-iconClose"
+            onClick={() => setShowModalDetailTuition(false)}
+          />
+        </ModalHeader>
+        <ModalBody>
+          <div className="modal__detailTuition-boardInfo">
+            <div className="modal__detailTuition-info">
+              <h3 className="modal__detailTuition-info-name">Thu học phí</h3>
+              <div className="modal__detailTuition-info-right">
+                <span className="modal__detailTuition-info-id">
+                  Mã biểu phí:
+                  <span>10_BHYT</span>
+                </span>
+                <span className="modal__detailTuition-info-year">
+                  Niên khoá:
+                  <span>2020 - 2023</span>
+                </span>
+              </div>
+            </div>
+            <div className="modal__detailTuition-detail">
+              <ul className="modal__detailTuition-detail-list">
+                <li className="modal__detailTuition-detail-item">
+                  1. Hồ sơ ghi danh
+                </li>
+                <li className="modal__detailTuition-detail-item">
+                  2. Phí ghi danh
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="modal__detailTuition-update">
+            <span className="modal__detailTuition-update-label">
+              Ngày cập nhật:
+            </span>
+            <span className="modal__detailTuition-update-date">02/07/2021</span>
+          </div>
+          <div className="modal__detailTuition-updateTable">
+            <div className="modal__detailTuition-updateTable-header">
+              <div className="modal__detailTuition-updateTable-header-item">
+                Thời gian
+              </div>
+              <div className="modal__detailTuition-updateTable-header-item">
+                Nội dung cập nhật
+              </div>
+              <div className="modal__detailTuition-updateTable-header-item">
+                Trạng thái
+              </div>
+            </div>
+            <ul className="modal__detailTuition-updateTable-list">
+              <li className="modal__detailTuition-updateTable-item">
+                <span className="modal__detailTuition-updateTable-item-info">
+                  02/07/2020 08:30 AM
+                </span>
+                <span className="modal__detailTuition-updateTable-item-info">
+                  Thay đổi trạng thái
+                </span>
+                <span className="modal__detailTuition-updateTable-item-info">
+                  Đang áp dụng
+                </span>
+              </li>
+              <li className="modal__detailTuition-updateTable-item">
+                <span className="modal__detailTuition-updateTable-item-info">
+                  02/07/2020 08:30 AM
+                </span>
+                <span className="modal__detailTuition-updateTable-item-info">
+                  Thêm biểu phí
+                </span>
+                <span className="modal__detailTuition-updateTable-item-info">
+                  Chưa áp dụng
+                </span>
+              </li>
+            </ul>
           </div>
         </ModalBody>
       </Modal>

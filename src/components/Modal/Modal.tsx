@@ -4,7 +4,9 @@ import "./Modal.css";
 const Modal = (props: any) => {
   return (
     <div className={`modal ${props.show ? "active" : ""}`}>
-      <div className="modal__content modal__addTuition">{props.children}</div>
+      <div className={`modal__content ${props.className}`}>
+        {props.children}
+      </div>
     </div>
   );
 };

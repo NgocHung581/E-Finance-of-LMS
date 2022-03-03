@@ -26,11 +26,6 @@
   transform: translate(-50%, -50%);
 }
 
-.modal .modal__content.modal__addTuition {
-  width: 884px;
-  height: 727px;
-}
-
 /* Modal header */
 .modal__header-title {
   font-family: Mulish;
