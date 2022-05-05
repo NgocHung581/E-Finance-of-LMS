@@ -8,6 +8,7 @@ import iconClose from "./image/iconClose.png";
 
 const StudentDetail = () => {
   const [showStudentDetail, setShowStudentDetail] = useState(false);
+  const [showBill, setShowBill] = useState(false);
 
   return (
     <Fragment>
@@ -236,9 +237,114 @@ const StudentDetail = () => {
         </ModalBody>
         <ModalFooter>
           <div className="modal__studentDetail-footer">
-            <span className="btn-showBill">Xem phiếu thu</span>
+            <span
+              onClick={() => {
+                setShowStudentDetail(false);
+                setShowBill(true);
+              }}
+              className="btn-showBill"
+            >
+              Xem phiếu thu
+            </span>
           </div>
         </ModalFooter>
+      </Modal>
+
+      <Modal className="modal__showbill" show={showBill}>
+        <ModalHeader>
+          <div className="modal__showbill-header">
+            <span>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</span>
+            <span>Độc lập - Tự do - Hạnh phúc</span>
+            <span>----------------------------------------------------</span>
+          </div>
+        </ModalHeader>
+        <ModalBody>
+          <div className="modal__showbill-body">
+            <h1 className="modal__showbill-body-title">
+              PHIẾU XÁC NHẬN ĐÃ ĐÓNG HỌC PHÍ
+            </h1>
+            <div className="modal__showbill-body-info">
+              <div className="modal__showbill-body-info-left">
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Họ và tên:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    Kim Thị Ngọc Hương
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Mã số sinh viên:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    171 002 1234
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Ngày sinh:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    25/08/1999
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">Lớp:</span>
+                  <span className="modal__showbill-body-info-detail">
+                    KT_19A
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Số phiếu:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    121235
+                  </span>
+                </div>
+              </div>
+              <div className="modal__showbill-body-info-right">
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Loại hình đào tạo:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    Chính quy
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Hệ đào tạo:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    Tín chỉ
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">Khoa:</span>
+                  <span className="modal__showbill-body-info-detail">
+                    Kế toán - Kiểm toán
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Ngành:{" "}
+                  </span>
+                  <span className="modal__showbill-body-info-detail">
+                    Kế toán
+                  </span>
+                </div>
+                <div className="modal__showbill-body-info-group">
+                  <span className="modal__showbill-body-info-label">
+                    Mã hóa đơn:
+                  </span>
+                  <span className="modal__showbill-body-info-detail">_</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ModalBody>
       </Modal>
     </Fragment>
   );

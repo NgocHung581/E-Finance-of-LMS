@@ -3,7 +3,7 @@ import { FaPlus, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Modal, { ModalBody, ModalHeader } from "../../Modal/Modal";
+import Modal, { ModalBody, ModalFooter, ModalHeader } from "../../Modal/Modal";
 import "../TuitionManagement.css";
 import "./CourseDetail.css";
 import iconInfo from "./image/IconInfo.png";
@@ -228,6 +228,19 @@ function CourseDetail() {
             </div>
           </div>
         </ModalBody>
+        <ModalFooter>
+          <div className="modal__footer-buttons">
+            <span
+              onClick={() => setShowModal(false)}
+              className="modal__footer-button modal__footer-buttons-cancel"
+            >
+              Hủy
+            </span>
+            <span className="modal__footer-button modal__footer-buttons-save">
+              Lưu
+            </span>
+          </div>
+        </ModalFooter>
       </Modal>
 
       {/* Modal detail tuition */}

@@ -277,6 +277,40 @@
   letter-spacing: 0.015em;
 }
 
+.modal__footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.modal__footer-buttons .modal__footer-button {
+  height: 52px;
+  width: 160px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__footer-buttons .modal__footer-buttons-cancel {
+  background: #f2f2f2;
+  color: #373839;
+  margin-right: 16px;
+}
+
+.modal__footer-buttons .modal__footer-buttons-save {
+  background: #c9c4c0;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
 /* Modal Detail Tuition */
 .modal .modal__content.modal__detailTuition {
   width: 884px;

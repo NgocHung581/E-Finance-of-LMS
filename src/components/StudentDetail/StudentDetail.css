@@ -387,3 +387,80 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+/* Modal show bill */
+.modal__content.modal__showbill {
+  height: 82.6%;
+  width: 738px;
+  border-radius: 0;
+  margin-top: -30px;
+}
+
+.modal__showbill-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Times New Roman;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  margin: 34px 0;
+}
+
+.modal__showbill-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.modal__showbill-body .modal__showbill-body-title {
+  font-family: Times New Roman;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.015em;
+  margin-bottom: 30px;
+}
+
+.modal__showbill-body .modal__showbill-body-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+.modal__showbill-body-info .modal__showbill-body-info-left,
+.modal__showbill-body-info .modal__showbill-body-info-right {
+  width: 47%;
+}
+
+.modal__showbill-body-info-left .modal__showbill-body-info-group,
+.modal__showbill-body-info-right .modal__showbill-body-info-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.modal__showbill-body-info-group .modal__showbill-body-info-label {
+  width: 45%;
+  font-family: Times New Roman;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+}
+
+.modal__showbill-body-info-group .modal__showbill-body-info-detail {
+  font-family: Times New Roman;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+}
